@@ -1,0 +1,32 @@
+﻿
+@Model PartialViewSample.Models.Partial
+
+ {@
+     Disposición = null;
+ }
+
+ <! DOCTYPE html>
+<Html>
+<Head>
+    <Meta name="viewport" content="width = device-width" />
+    <Title>
+        addProduct </title>
+        </Head>
+        <Body>
+            <Div>
+                <Label>
+                    Id: </ label>
+                    @ Html.TextBox ( "Id", Model.Id)
+                    </Label>
+                        Nombre: </ label>
+                        @ Html.TextBox ( "Nombre", Model.Id)
+                        <Label>
+                            Descripción: </ label>
+                            @ Html.TextBox ( "Descripción", Model.Description)
+                            </Label>
+                                Cantidad: </ label>
+                                @ Html.TextBox ( "Cantidad", Model.Quantity)
+                                </Div>
+                                </Body>
+               
+                                </Html>

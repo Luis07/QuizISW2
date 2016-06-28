@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace Examen.App_Code
+{
+	@helper Head(string content) {
+<div class="note"
+     style="border: 1px solid black; width: 100%; padding: 5px; margin-left: 15px;">
+    <h1>
+        <strong>Ingeníero en Software graduado de la UTN</strong>&nbsp;&nbsp; @content
+    </h1>
+    <h2>
+        <strong>Costa Rica</strong>
+    </h2>
+    <h2>
+        <p>Educación:</p><strong>Universidad Tecníca Nacional</strong>
+    </h2>
+</div>
+}
+@helper Tittle(string content) {
+<div class="note"
+     style="border: 1px solid black; width: 100%; padding: 5px; margin-left: 15px;">
+    <h1>
+        @content
+    </h1>
+</div>
+}
+@helper footer(string content)
+{
+    <div class="note"
+         style="border: 1px solid black; width: 100%; padding: 5px; margin-left: 15px;">
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            </footer>  
+    </div>
+}
+}
